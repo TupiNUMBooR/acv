@@ -1,0 +1,12 @@
+services:
+  acv:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      tags:
+        - tupinumboor/acv:latest
+        - tupinumboor/acv:0.3
+    image: tupinumboor/acv
+    environment:
+      BUILDKIT_PROGRESS: plain
+      DOCKER_BUILDKIT: 0

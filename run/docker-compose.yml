@@ -1,0 +1,7 @@
+services:
+  acv:
+    image: tupinumboor/acv
+    volumes:
+      - "./files:/acv/files"
+      - "./scripts:/acv/scripts"
+    restart: unless-stopped
